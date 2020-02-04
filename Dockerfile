@@ -1,4 +1,4 @@
-# Base
+# Image
 FROM alpine:3.11.3 as builder
 
 # Environment variables
@@ -24,7 +24,7 @@ RUN apk add --no-cache \
   ttf-liberation \
   ttf-ubuntu-font-family \
 && apk add --no-cache --virtual .build-deps \
-  g++ \
+  g++==8.3.0-r0 --repository=http://dl-cdn.alpinelinux.org/alpine/v3.10/main \
   git \
   gtk+ \
   gtk+-dev \
