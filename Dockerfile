@@ -1,5 +1,5 @@
 # Image
-FROM alpine:3.11.3 as builder
+FROM alpine:20201218 as builder
 
 # Environment variables
 ENV WKHTMLTOX_VERSION=0.12.5
